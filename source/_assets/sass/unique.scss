@@ -1,0 +1,32 @@
+
+/*
+    Place any unique SCSS here for your original site theme
+    so your documentation pages will seamlessly integrate.
+*/
+
+body, html {
+    color: $body-color;
+    background: $body-bg;
+    overflow-x: hidden;
+}
+
+#navigation-top {
+    color: $nav-color;
+    min-height: $nav-height;
+
+    .nav-link {
+        color: $nav-color;
+        padding: 0.5rem 2rem;
+    }
+
+    .navbar-toggler {
+        float: right;
+        right: 1rem;
+        top: 0.5rem;
+        position: absolute;
+    }
+}
+
+section {
+    margin-top: $nav-height;
+}

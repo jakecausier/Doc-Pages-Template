@@ -1,0 +1,20 @@
+
+// Bootstrap change defaults
+@import "variables";
+
+// Bootstrap import
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import unique variables for the project
+@import "unique-variables";
+
+// Import unique SCSS for the project
+@import "unique";
+
+section {
+    padding-top: 2rem;
+
+    .list-group-item {
+        border: 0;
+    }
+}
