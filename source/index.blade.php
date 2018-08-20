@@ -16,11 +16,8 @@
 
             <div id="content" class="tab-content col">
 
-                @foreach ($docfiles as $key => $docpage)
-                    <div class="tab-pane fade @if ($docpage['startActive'] == 'true') {{'show active'}} @endif" id="{{ $docpage['navSlug'] }}" role="tabpanel" aria-labelledby="{{ $docpage['navSlug'] }}-tab">
-
-                    </div>
-                @endforeach
+                <h1>Welcome to the docs!</h1>
+                <h2>Browse a topic to the left. This is just placeholder text</h2>
 
             </div>
 

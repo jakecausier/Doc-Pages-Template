@@ -23,8 +23,25 @@
 
                 <div id="content" class="tab-content col">
 
-                    <h1>{{ $page->pageTitle }}</h1>
+                    <h1 id="{{ $page->navSlug }}">{{ $page->pageTitle }}</h1>
+
                     @yield('content')
+
+                    @component('dev.ipsum')
+                    @endcomponent
+                    @component('dev.ipsum')
+                    @endcomponent
+                    @component('dev.ipsum')
+                    @endcomponent
+
+                    <div id="{{ $page->navSlug . '-section2' }}">
+                        <h2>Special Info</h2>
+
+                        @component('dev.ipsum')
+                        @endcomponent
+                        @component('dev.ipsum')
+                        @endcomponent
+                    </div>
 
                 </div>
             </div>
