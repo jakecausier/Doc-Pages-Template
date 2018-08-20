@@ -10,6 +10,9 @@
 /*
     Heights and widths
 */
+/*
+    Animation and transform
+*/
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9527,21 +9530,54 @@ body, html {
   overflow-x: hidden;
 }
 
-#navigation-top {
+#navigation-header {
+  background-image: url("../unique/waves_nav_bg.png");
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 250px;
+}
+
+#navigation-header .logo-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 8.33333333%;
+}
+
+#navigation-header .logo-container .logo {
+  width: 33%;
+  height: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#navigation-header .logo-container .logo:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#navigation-header #navigation-top {
   color: #FFF;
   min-height: 56px;
 }
 
-#navigation-top .nav-link {
+#navigation-header #navigation-top .nav-link {
   color: #FFF;
   padding: 0.5rem 2rem;
 }
 
-#navigation-top .navbar-toggler {
+#navigation-header #navigation-top .navbar-toggler {
   float: right;
   right: 1rem;
   top: 0.5rem;
   position: absolute;
+}
+
+@media (max-width: 991.98px) {
+  #navigation-header {
+    height: 150px;
+  }
 }
 
 section {
@@ -9554,4 +9590,8 @@ section {
 
 section .list-group-item {
   border: 0;
+}
+
+#content-nav .divider {
+  margin-top: 2rem;
 }

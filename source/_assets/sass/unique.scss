@@ -10,20 +10,51 @@ body, html {
     overflow-x: hidden;
 }
 
-#navigation-top {
-    color: $nav-color;
-    min-height: $nav-height;
+#navigation-header {
+    background-image: url('../unique/waves_nav_bg.png');
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
 
-    .nav-link {
-        color: $nav-color;
-        padding: 0.5rem 2rem;
+    .logo-container {
+        position: absolute;
+        bottom: 1rem;
+        left: $container-rows;
+
+        .logo {
+            width: 33%;
+            height: auto;
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale($pop-scale-size);
+            }
+        }
     }
 
-    .navbar-toggler {
-        float: right;
-        right: 1rem;
-        top: 0.5rem;
-        position: absolute;
+    #navigation-top {
+        color: $nav-color;
+        min-height: $nav-height;
+
+        .nav-link {
+            color: $nav-color;
+            padding: 0.5rem 2rem;
+        }
+
+        .navbar-toggler {
+            float: right;
+            right: 1rem;
+            top: 0.5rem;
+            position: absolute;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #navigation-header {
+        height: 150px;
     }
 }
 

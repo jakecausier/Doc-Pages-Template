@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://docs.purplecommerce.dev',
+    'exUrl' => 'https://purplecommerce.dev',
     'production' => false,
-    'collections' => ['pages'],
+    'collections' => ['docfiles'],
 ];

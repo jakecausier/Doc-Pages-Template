@@ -9,7 +9,7 @@
     </head>
     <body>
 
-        @component('unique.navigation')
+        @component('unique.navigation', ['page' => $page])
         @endcomponent
 
         @yield('body')

@@ -13,6 +13,7 @@ mix.webpackConfig({
 
 mix.js('source/_assets/js/main.js', 'source/assets/js/main.js')
     .sass('source/_assets/sass/main.scss', 'source/assets/css/main.css')
+    .copy('source/_assets/unique/', 'source/assets/unique')
     .options({
         processCssUrls: false,
     }).version();
