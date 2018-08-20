@@ -1,7 +1,9 @@
 ---
+extends: _layouts.page
 navTitle: Adding Pages
+navOrder: 2-1
 navSlug: adding-pages
-pageTitle: 2.1 - Adding Pages
+pageTitle: Adding Pages
 startActive: false
 topDivider: true
 section: content

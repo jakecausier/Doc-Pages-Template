@@ -8,5 +8,7 @@ return [
     /* Now define the URL for the original site */
     'exUrl' => 'https://purplecommerce.dev',
     'production' => false,
-    'collections' => ['docfiles'],
+    'collections' => [
+        'docfiles' => ['path' => 'page/{navOrder}/{navSlug}']
+    ],
 ];

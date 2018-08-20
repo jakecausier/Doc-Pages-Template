@@ -1,7 +1,9 @@
 ---
+extends: _layouts.page
 navTitle: Introduction
+navOrder: 1-1
 navSlug: introduction
-pageTitle: 1.1 - Introduction
+pageTitle: Introduction
 startActive: true
 topDivider: false
 section: content

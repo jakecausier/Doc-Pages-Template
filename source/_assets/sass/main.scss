@@ -24,3 +24,37 @@ section {
         margin-top: 2rem;
     }
 }
+
+.feather {
+  stroke: #CCC;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #EEE;
+
+    .navigation {
+        padding-left: 0;
+        list-style-type: none;
+        color: $dark;
+
+        .nav-link {
+            color: $dark;
+        }
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .icon {
+        width: $svg-icon-lg;
+        height: $svg-icon-lg;
+    }
+
+}

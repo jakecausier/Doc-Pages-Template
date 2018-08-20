@@ -1,7 +1,9 @@
 ---
+extends: _layouts.page
 navTitle: Getting Started
+navOrder: 1-2
 navSlug: getting-started
-pageTitle: 1.2 - Getting Started
+pageTitle: Getting Started
 startActive: false
 topDivider: false
 section: content

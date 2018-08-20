@@ -14,6 +14,7 @@ mix.webpackConfig({
 mix.js('source/_assets/js/main.js', 'source/assets/js/main.js')
     .sass('source/_assets/sass/main.scss', 'source/assets/css/main.css')
     .copy('source/_assets/unique/', 'source/assets/unique')
+    .copy('node_modules/feather-icons/dist/feather-sprite.svg', 'source/assets/feather-sprite.svg')
     .options({
         processCssUrls: false,
     }).version();

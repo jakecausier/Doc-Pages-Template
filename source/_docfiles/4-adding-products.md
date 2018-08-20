@@ -1,5 +1,7 @@
 ---
+extends: _layouts.page
 navTitle: Adding Products
+navOrder: 2-2
 navSlug: adding-products
 pageTitle: 2.2 - Adding Products
 startActive: false
