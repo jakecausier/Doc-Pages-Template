@@ -9,6 +9,6 @@ return [
     'exUrl' => 'https://purplecommerce.dev',
     'production' => false,
     'collections' => [
-        'docfiles' => ['path' => 'page/{navOrder}/{navSlug}']
+        'docfiles' => ['path' => 'page/{navOrder}-{navSlug}']
     ],
 ];

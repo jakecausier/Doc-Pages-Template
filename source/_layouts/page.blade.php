@@ -16,32 +16,16 @@
                 <div id="content-nav" class="d-none d-md-inline col-3 border-right border-primary">
                     <div class="nav flex-column nav-pills" id="docs-navigation" role="tablist" aria-orientation="vertical">
                         @foreach ($docfiles as $key => $docnav)
-                            <a class="nav-link @if ($docnav['navSlug'] === $page->navSlug) {{ 'active' }} @endif  @if ($docnav['topDivider'] == 'true') {{'mt-4'}} @endif" id="{{ $docnav['navSlug'] }}-tab" href="{{ "/page/" . $docnav['navOrder'] . "/" . $docnav['navSlug'] }}">{{ $docnav['navTitle'] }}</a>
+                            <a class="nav-link @if ($docnav['navSlug'] === $page->navSlug) {{ 'active' }} @endif  @if ($docnav['topDivider'] == 'true') {{'mt-4'}} @endif" id="{{ $docnav['navSlug'] }}-tab" href="{{ "/page/" . $docnav['navOrder'] . "-" . $docnav['navSlug'] }}">{{ $docnav['navTitle'] }}</a>
                         @endforeach
                     </div>
                 </div>
 
                 <div id="content" class="tab-content col">
 
-                    <h1 id="{{ $page->navSlug }}">{{ $page->pageTitle }}</h1>
+                    <h1 class="mb-4" id="{{ $page->navSlug }}">{{ $page->pageTitle }}</h1>
 
                     @yield('content')
-
-                    @component('dev.ipsum')
-                    @endcomponent
-                    @component('dev.ipsum')
-                    @endcomponent
-                    @component('dev.ipsum')
-                    @endcomponent
-
-                    <div id="{{ $page->navSlug . '-section2' }}">
-                        <h2>Special Info</h2>
-
-                        @component('dev.ipsum')
-                        @endcomponent
-                        @component('dev.ipsum')
-                        @endcomponent
-                    </div>
 
                 </div>
             </div>

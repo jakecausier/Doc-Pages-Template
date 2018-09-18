@@ -9596,6 +9596,33 @@ section .list-group-item {
   margin-top: 2rem;
 }
 
+#content img {
+  margin: 1rem 15px 1rem 0;
+  border: #92278F 1px solid;
+  padding: 0.5rem;
+  width: 50%;
+  float: right;
+  right: 0;
+}
+
+#content img:after {
+  clear: both;
+}
+
+#content .img-full {
+  float: none;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#content code {
+  width: 100%;
+  background: #707070;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+}
+
 .feather {
   stroke: #CCC;
   stroke-width: 2;
