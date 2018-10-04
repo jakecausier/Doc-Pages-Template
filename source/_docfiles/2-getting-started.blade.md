@@ -14,6 +14,10 @@ section: content
 <p>To install the framework, navigate into your website's Laravel Installation
 containing your <code>composer.json</code> within your Terminal window.</p>
 
+<p class="alert alert-info">
+    Laravel E-commerce required that the Auth module is enabled and imported to your Laravel project. Import it using <code>php artisan make:auth</code>
+</p>
+
 <p>Ensure you have <a href="https://getcomposer.org/" target="_blank">Composer</a>
 installed, and run <code>composer install chrisbraybrooke/laravel-ecommerce</code>.
 This will install the latest version of the package into your <code>composer.json</code>
