@@ -19,14 +19,27 @@ section {
     }
 }
 
-#content-nav {
+#content-nav .nav {
+    border-right: $primary 1px solid;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
     .divider {
         margin-top: 2rem;
     }
 }
 
-#content {
+@include media-breakpoint-down(sm) {
+    #content-nav .nav {
+        border-right: 0;
+        border-bottom: $primary 1px solid;
+        padding-bottom: 2rem;
+        padding-right: 0;
+        margin-bottom: 4rem;
+    }
+}
 
+#content {
     p {
         margin: 2rem 0;
     }
@@ -141,6 +154,18 @@ section {
         border-color: #f56c6c;
     }
 
+}
+
+#return {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #EEE;
+}
+
+@include media-breakpoint-down(sm) {
+    #return {
+        text-align: center;
+    }
 }
 
 .feather {

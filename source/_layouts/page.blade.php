@@ -13,18 +13,25 @@
 
         <section class="container">
             <div class="row">
-                <div id="content-nav" class="d-none d-md-inline col-3 border-right border-primary">
+                <div id="content-nav" class="col-12 col-md-3">
                     @component('partials.nav-side', ['page' => $page, 'docfiles' => $docfiles])
                     @endcomponent
                 </div>
 
-                <div id="content" class="tab-content col">
+                <div id="content" class="tab-content col offset-md-1">
 
                     <h1 class="mb-4" id="{{ $page->navSlug }}">{{ $page->pageTitle }}</h1>
 
                     @yield('content')
 
                 </div>
+
+                <div class="w-100"></div>
+
+                <div id="return" class="col offset-md-4">
+                    <strong><a href="#top">Return to top</a></strong>
+                </div>
+
             </div>
         </section>
 
